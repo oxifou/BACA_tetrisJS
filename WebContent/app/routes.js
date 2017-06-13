@@ -9,6 +9,6 @@ app.config(function($routeProvider) {
 		})
 		.when("/play", {
 			templateUrl: "./app/components/tetris/tetris.html",
-			controller: "homeController"
+			controller: "tetrisController"
 		});	
 }); 
