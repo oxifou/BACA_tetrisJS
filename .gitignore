@@ -5,13 +5,9 @@
 
 WebContent/bower_components/
 
-*.js
-
 *.map
 
 *.md
-
-*.css
 
 *.gzip
 
