@@ -1,0 +1,25 @@
+{
+    "name": "BACA_tetrisJS",
+    "authors": [
+        "jperrouault <jeremy.perrouault@ascadis.fr>"
+    ],
+    
+   "description": "",
+    "main": "",
+    "license": "MIT",
+    "homepage": "",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    
+   "dependencies": {
+        "angular": "angularjs#^1.6.1",
+        "angular-route": "^1.6.1",
+        "angular-resource": "^1.6.1",
+         "materialize": "^0.97.8"
+    }
+}

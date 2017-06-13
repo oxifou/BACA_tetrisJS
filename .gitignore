@@ -11,8 +11,6 @@ WebContent/bower_components/materialize/sass/components/
 
 WebContent/bower_components/angular-resource/
 
-*.json
-
 *.js
 
 *.map
