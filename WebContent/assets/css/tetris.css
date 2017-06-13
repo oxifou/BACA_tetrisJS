@@ -1,0 +1,86 @@
+.board,
+.score {
+	position: relative;
+	float: left;
+	background: #F5F5F5;
+	border: solid 1px black;
+}
+
+
+
+
+.board {
+	width: 250px;
+	height: 500px;
+	background: #E0F2F1;
+}
+
+
+
+
+.score {
+	width: 200px;
+	height: 300px;
+	margin-left: 20px;
+
+	font-family: "Orbitron";
+	color: black;
+	font-size: 60px;
+}
+
+
+.score > * {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.score > span {
+	font-size: 60px;
+}
+
+
+.score .next-tetrimino {
+	position: relative;
+	width: 100px;
+	margin: 0 auto;
+}
+
+.score .next-tetrimino .tetrimino {
+	top: 15px;
+	left: 15px;
+}
+
+.score .next-tetrimino .tetrimino.I {
+	transform: rotate(90deg) translateX(5px) translateY(-85px);
+}
+
+.score .next-tetrimino .tetrimino.O {
+	left: 25px;
+}
+
+
+.score > small {
+	position: absolute;
+	bottom: 25px;
+	font-size: 12px;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+	.top-nav {
+		display: none;
+	}
+
+	.board {
+		width: 250px;
+		background: #E0F2F1;
+	}
+
+	.score {
+		display: none;
+	}
+}
