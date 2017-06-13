@@ -3,13 +3,7 @@
 
 \.settings/
 
-WebContent/bower_components/angular-resource/angular-resource\.js
-
-WebContent/bower_components/angular-resource/angular-resource\.min\.js
-
-WebContent/bower_components/materialize/sass/components/
-
-WebContent/bower_components/angular-resource/
+WebContent/bower_components/
 
 *.js
 
