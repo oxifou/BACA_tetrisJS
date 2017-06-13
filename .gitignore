@@ -3,8 +3,6 @@
 
 \.settings/
 
-WebContent/bower_components/angular-resource/\.bower\.json
-
 WebContent/bower_components/angular-resource/angular-resource\.js
 
 WebContent/bower_components/angular-resource/angular-resource\.min\.js
