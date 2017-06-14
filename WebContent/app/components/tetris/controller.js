@@ -157,6 +157,13 @@ app.controller("tetrisController", function($scope, Page, tetris, tetrisGhost, t
 	
 	angular.element(tetris).on('gameOver', function() {
 		
+		for (var i = 3 ; i < 20 ; i++ ){
+			
+			for ( var j = 0 ; j < 10 ; j++ ) {
+				tetris.boardGrid[i][j].color = "black";
+			}	
+		}
+		
 		var points = tetrisScore.points;
 		var lines = tetrisScore.lines;
 		var level = tetrisScore.level;
