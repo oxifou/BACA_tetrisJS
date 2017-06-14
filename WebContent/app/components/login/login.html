@@ -1,6 +1,5 @@
-<section>
+<section ng-hide="currentUser">
     <table>
-     
         <tr>
             <td><label>Username :</label></td>
             <td><input type="text" ng-model="username" /></td>
@@ -21,6 +20,12 @@
         
     </table>
 
+<p>{{ username }}</p>
 
     
+</section>
+
+
+<section ng-show="currentUser">
+	<p>{{ currentUser.prenom }}</p>
 </section>
