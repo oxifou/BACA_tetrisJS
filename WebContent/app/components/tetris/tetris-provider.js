@@ -65,7 +65,7 @@ app.provider("tetris", function() {
 
 
 			this.tetrimino = angular.element('<div class="tetrimino" data-figure="0" />');
-			this.tetriPosition = { x: 0, y: 0 };
+			this.tetriPosition = { x: 4, y: 0 };
 
 			this.tetrimino.data('source', mySelectedTetrimino);
 			this.tetrimino.data('figures', mySelectedTetrimino.figures);

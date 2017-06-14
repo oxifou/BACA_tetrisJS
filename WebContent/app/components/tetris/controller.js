@@ -2,7 +2,7 @@ var app = angular.module("BACA_tetrisAngularJS");
 
 
 
-app.controller("tetrisController", function($scope, Page, tetris, tetrisGhost, tetrisScore) {
+app.controller("tetrisController", function($scope, Page, tetris, tetrisGhost, tetrisScore, TetrisPartieProvider) {
 	Page.setTitle("Jouer");
 
 	$scope.autoTetris = null;
@@ -13,6 +13,11 @@ app.controller("tetrisController", function($scope, Page, tetris, tetrisGhost, t
 	$scope.start = function() {
 		
 		partie = TetrisPartieProvider.add();
+		tetrisScore.points = 0;
+		tetrisScore.lines = 0;
+		tetrisScore.level = 1;
+		$(tetrisScore).trigger('scoring');
+		
 		
 		angular.element('.board').children().remove();
 		tetrisGhost.setBoard(angular.element('.board'));
@@ -35,6 +40,7 @@ app.controller("tetrisController", function($scope, Page, tetris, tetrisGhost, t
 		angular.element('.next-tetrimino').append(tetris.createTetrimino());
 
 		tetris.tetrimino = angular.element('.board .tetrimino');
+		angular.element(tetris).trigger("hitPlayed");
 		tetrisGhost.update();
 
 
