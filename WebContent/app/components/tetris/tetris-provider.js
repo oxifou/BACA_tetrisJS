@@ -3,9 +3,9 @@ var app = angular.module("BACA_tetrisAngularJS");
 
 
 app.provider("tetris", function() {
-	var largeur = 0;
-	var hauteur = 0;
-	var sizeOfTetriminos = 0;
+	var largeur = 10;
+	var hauteur = 20;
+	var sizeOfTetriminos = 25;
 
 
 	this.setLargeur = function(_largeur) {
