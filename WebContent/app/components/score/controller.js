@@ -10,7 +10,7 @@ app.controller("scoreController", function($scope, Page, userF, scoreResource) {
 		$scope.points = 0;
 		$scope.niveau = 0;
 	    $scope.date = "";
-	    $scope.score = scoreResource.query();
+	    $scope.scores = scoreResource.query();
 	
 	    
 	    $scope.addScore = function() {
