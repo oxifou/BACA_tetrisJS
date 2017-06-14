@@ -10,5 +10,9 @@ app.config(function($routeProvider) {
 		.when("/play", {
 			templateUrl: "./app/components/tetris/tetris.html",
 			controller: "homeController"
+		})
+		.when("/login", {
+			templateUrl: "./app/components/login/login.html",
+			controller: "loginController"
 		});	
 }); 

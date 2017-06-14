@@ -1,0 +1,31 @@
+<section ng-hide="currentUser">
+    <table>
+        <tr>
+            <td><label>Username :</label></td>
+            <td><input type="text" ng-model="username" /></td>
+        </tr>
+
+        <tr>
+            <td><label>Mot de Passe :</label></td>
+            <td><input type="text" ng-model="password" /></td>
+        </tr>
+
+                
+        <tr>
+            <td >
+                <button ng-click="connexion()">Valider</button>
+            </td>
+        </tr>
+
+        
+    </table>
+
+
+
+    
+</section>
+
+
+<section ng-show="currentUser">
+	<p>{{ currentUser.prenom }}</p>
+</section>
