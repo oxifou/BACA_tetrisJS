@@ -27,6 +27,9 @@ app.controller("scoreController", function($scope, Page, userF, scoreResource) {
 	  }
 });
 
-//app.factory("scoreResource", function(API_URL, $resource) {
-//    return $resource(API_URL + '/score', null);
-//});
+app.factory("scoreResource", function(API_URL, $resource) {
+    return $resource(API_URL + '/score', null, {
+        'sc': { method: 'POST' }
+    	
+    });
+});
