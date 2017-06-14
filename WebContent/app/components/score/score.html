@@ -1,0 +1,22 @@
+
+	
+	<p>ID Joueur {{ id }}</p>
+	
+	<table>
+	        <thead>
+	        	<td>Username</td>
+	        	<th>Niveau</th>
+	            <th>Date</th>
+	            <th>Points</th>
+	            
+	        </thead>
+	
+	        <tbody>
+	            <tr ng-repeat="score in scores | filter: filtreScore | orderBy: '-points'">
+	                <td>{{ username }}</td>
+	                <td>{{ niveau }}</td>
+	                <td>{{ date }}</td>
+	                <td>{{ points }}</td>
+	            </tr>
+	        </tbody>
+	</table>

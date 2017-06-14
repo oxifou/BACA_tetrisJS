@@ -14,5 +14,9 @@ app.config(function($routeProvider) {
 		.when("/login", {
 			templateUrl: "./app/components/login/login.html",
 			controller: "loginController"
+		})
+		.when("/score", {
+			templateUrl: "./app/components/score/score.html",
+			controller: "scoreController"
 		});	
 }); 
