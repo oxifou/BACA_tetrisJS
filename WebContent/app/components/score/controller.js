@@ -26,3 +26,7 @@ app.controller("scoreController", function($scope, Page, userF, scoreResource) {
 		  return(this.username != "" && this.points != 0 && this.niveau != 0 && this.date  != "");
 	  }
 });
+
+//app.factory("scoreResource", function(API_URL, $resource) {
+//    return $resource(API_URL + '/score', null);
+//});
